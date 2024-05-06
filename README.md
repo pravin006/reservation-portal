@@ -16,14 +16,17 @@ Before you begin, ensure you have the following installed on your system:
    cd [repository-name]
 
 2. **Create and Activate a Virtual Environment**
+   ```bash
     python3 -m venv venv
     venv\Scripts\activate
     or
     source venv/bin/activate
-3. **Install Dependencies**
+4. **Install Dependencies**
+   ```bash
     pip install -r requirements.txt
 
-4. **Start the Application**
+6. **Start the Application**
+   ```bash
     ./start.sh
 
 Access it at http://localhost:5000
