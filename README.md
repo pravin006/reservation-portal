@@ -18,9 +18,8 @@ Before you begin, ensure you have the following installed on your system:
 2. **Create and Activate a Virtual Environment**
    ```bash
     python3 -m venv venv
-    venv\Scripts\activate
-    or
-    source venv/bin/activate
+    source venv/Scripts/activate
+   
 4. **Install Dependencies**
    ```bash
     pip install -r requirements.txt
