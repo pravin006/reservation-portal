@@ -1,4 +1,4 @@
-This is a Flask application that uses MongoDB as its database backend. Follow the instructions below to set up and run the application on your local machine.
+This is a Flask application that uses MongoDB as its database backend. Please follow the instructions below to set up and run the application on your local machine.
 
 ## Prerequisites
 
