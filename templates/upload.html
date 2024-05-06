@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block mainblock %}
+<div class="card-header">
+  <h2>Upload recordings</h2>
+</div>
+<div class="card-body">
+        <!-- will post to /upload route when submit is clicked-->
+        <!-- enctype is set to send obj types -->
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <!-- type='hidden' hides element-->
+            <!-- value = 'upload' send 'upload' to the backend-->
+            <input name="type" type="hidden" value="upload">
+            <div> 
+                <label for='upload'>Upload CSV file</label>
+                <!-- for dropdown list -->
+                <label for="filetype">with data type of:</label>
+                <select class="form-control mb-1" name="filetype" id="filetype">
+                    <option value="booking">Booking</option>
+                    <option value="courses">Courses</option>
+                </select>
+                <!-- take note of name = 'file' in backend-->
+                <!-- type='file' allows us to choose file from desktop -->
+                <!-- accept='.csv' only allows us to send csv. there are other file types -->
+                <!-- this lone is to select the file to upload -->
+                <input class="upload" id='upload' name='file' type='file' accept='.csv' required>
+
+            </div>
+            <div class="form-group mt-1 mb-0">
+                <!-- this line us to send the file to backend -->
+                <input type="submit" value="Upload" type="Upload"/>
+            </div>
+            
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </form>
+</div>
+{% endblock %}

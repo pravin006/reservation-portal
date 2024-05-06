@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block bookingblock %}
+<div class = "row" >
+    <div class="col-sm-5">
+        <div class="card" style="height:100%;">
+            <img class="card-img-top p-2" src={{courses.image_url}} style=" width:80%;">
+            <div class="card-body">
+                <h5 class="card-title" id = "name_of" value="{{courses.course}}">{{courses.course}}</h5>
+                <p class="card-text">{{courses.description}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-7" >
+        <div class="card" style="height:100%;">
+            <div class="card-header">
+                <h1>Select Tee Off Time</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <label for="TeeTime">Tee Time</label><br>
+                    <input type="datetime-local" id="teeTime" name="teeTime">
+                    <!-- <button type="button" id="dt">Submit</button> -->
+                    <br>
+                    <button type="button" id="dt" class="btn btn-primary mt-1" style="width:20%">Book</button>
+                </form>
+            </div>
+            <div id="result"> </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

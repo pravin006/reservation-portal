@@ -1,0 +1,185 @@
+/* Main Section */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+}
+
+.img-fluid {
+    max-width: 70%;
+    height: auto;
+} 
+
+  
+/* navbar */
+.sidebar {
+    height: 100vh;
+    background: linear-gradient(rgba(70, 64, 156, 0.548), rgba(0, 0, 0, .9)), url(../img/sidebar-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 7px 25px #999;
+}
+
+.bottom-border {
+    border-bottom: 1px groove #eee;
+}
+
+.sidebar-link {
+    transition: all .4s;
+}
+
+.sidebar-link:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.alert {
+    margin-top: 0.25rem;
+}
+
+
+@media (max-width: 768px) {
+.sidebar {
+    /* Position can be relative to other components
+    
+    relative, inherit */
+    position: static;
+    height: auto;
+}
+}
+
+.top-navbar {
+    position: static;
+    background: linear-gradient(rgba(167, 165, 202, 0.548), rgba(53, 27, 87, 0.377)), url(../img/sidebar-3.jpg);
+}
+
+
+
+
+/* For the log.html */
+
+.card-body .container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat (6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    background-color: rgb(255, 255, 255);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.card-header h3 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    /* margin: auto; */
+
+}
+
+
+/* .card-body (Parent)     .weight_label (Grandchild)  
+
+ .card-body > .weight_label - This will not worker because the greater sign
+ requires a direct child. 
+https://www.geeksforgeeks.org/what-is-greater-than-sign-selector-in-css/#:~:text=The%20greater%20than%20sign%20(%3E),direct%20children%20of%20a%20parent.
+
+https://www.w3schools.com/cssref/sel_element_gt.asp */
+.card-body .weight_label {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-body .weight_input {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.card-body .height_label {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-body .height_input {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.card-body .pre_radio_space {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.card-body #bmi {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: inline-block;
+    background-color: rgb(216, 210, 210);
+    opacity: 1;
+    color: rgb(17, 16, 16);
+    font-size: 15px;
+    border: none;
+    width: 80px;
+    box-sizing: border-box;
+}
+
+.card-body #bmi:hover {
+    background-color: rgb(207, 219, 241);
+}
+
+.card-body #clear{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    display: inline-block;
+    background-color: rgb(121, 117, 117);
+    opacity: 0.4;
+    color: rgb(17, 16, 16);
+    font-size: 15px; 
+    border: none;
+    width: 80px;
+    box-sizing: border-box;
+}
+
+.card-body button#clear[usrOn="1"]:hover {
+    background-color: rgb(207, 219, 241) !important;
+}
+
+.card-body .output_space {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    overflow-y: scroll;
+    height: 110px;
+    border: solid;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-body .linkChart {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-size: 12px; 
+    height: 110px;
+    border: solid;
+    background-color: rgb(255, 255, 255);
+    /* padding-left: 20px; */
+    /*border: 1px solid #000;*/
+}  
