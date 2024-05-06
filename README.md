@@ -14,14 +14,14 @@ Before you begin, ensure you have the following installed on your system:
    ```bash
    git clone https://github.com/pravin006/Golf-Course-Reservation-Portal-.git
 
-2. If on Windows open the directory directly with Git Bash
+2. If on Windows open the directory directly with Git Bash.  
    On Unix/Mac OS:
    ```bash
    cd Golf-Course-Reservation-Portal-
    
 5. **Create and Activate a Virtual Environment**
    ```bash
-    python3 -m venv venv
+    python -m venv venv
     source venv/Scripts/activate
    
 6. **Install Dependencies**
@@ -32,5 +32,5 @@ Before you begin, ensure you have the following installed on your system:
    ```bash
     ./start.sh
 
-Access it at http://localhost:5000
+Access the app at http://localhost:5000
 
