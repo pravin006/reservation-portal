@@ -12,8 +12,8 @@ Before you begin, ensure you have the following installed on your system:
 1. **Clone the Repository**
    First, clone the repository to your local machine:
    ```bash
-   git clone [your-repository-url]
-   cd [repository-name]
+   git clone https://github.com/pravin006/Golf-Course-Reservation-Portal-.git
+   cd Golf-Course-Reservation-Portal
 
 2. **Create and Activate a Virtual Environment**
    ```bash
