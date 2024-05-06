@@ -6,25 +6,29 @@ Before you begin, ensure you have the following installed on your system:
 - Python 3.10 or higher
 - pip (Python package installer)
 - MongoDB running on localhost (port 27017)
+- Git if on Windows
 
 ## Setup Instructions
 
 1. **Clone the Repository**
-   First, clone the repository to your local machine:
    ```bash
    git clone https://github.com/pravin006/Golf-Course-Reservation-Portal-.git
-   cd Golf-Course-Reservation-Portal-
 
-2. **Create and Activate a Virtual Environment**
+2. If on Windows open the directory directly with Git Bash
+   On Unix/Mac OS:
+   ```bash
+   cd Golf-Course-Reservation-Portal-
+   
+5. **Create and Activate a Virtual Environment**
    ```bash
     python3 -m venv venv
     source venv/Scripts/activate
    
-4. **Install Dependencies**
+6. **Install Dependencies**
    ```bash
     pip install -r requirements.txt
 
-6. **Start the Application**
+7. **Start the Application**
    ```bash
     ./start.sh
 
