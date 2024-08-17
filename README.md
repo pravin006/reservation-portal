@@ -1,11 +1,11 @@
 This is a golf course reservation Flask application that uses MongoDB as its database. Please follow the instructions below to set up and run the application on your local machine.
 
 #### Courses
-![Courses](https://github.com/user-attachments/assets/7ee315ee-eabc-462f-a25a-93ebb27e2993)
+![Courses](/screenshots/courses.png)
 #### Book Course
-![Book Course](https://github.com/user-attachments/assets/89e9aed8-dec6-46ba-96a2-93db0b477b21)
+![Book Course](/screenshots//book.png)
 #### View Booking
-![View Booking](https://github.com/user-attachments/assets/832c71e9-0104-418e-b52d-2ccde65ae5ce)
+![View Booking](/screenshots/view.png)
 
 ## Prerequisites
 
